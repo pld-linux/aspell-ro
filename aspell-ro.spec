@@ -3,7 +3,7 @@ Summary(pl):	S³ownik rumuñski dla aspella
 Name:		aspell-ro
 Version:	0.50
 %define	subv	2
-Release:	3
+Release:	4
 Epoch:		1
 License:	free to use, no restrictions
 Group:		Applications/Text

@@ -1,5 +1,5 @@
 Summary:	Romanian dictionary for aspell
-Summary(pl):	Rumu雟ki s這wnik dla aspella
+Summary(pl):	S這wnik rumu雟ki dla aspella
 Name:		aspell-ro
 Version:	0.50
 %define	subv	2
@@ -18,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Romanian dictionary (i.e. word list) for aspell.
 
 %description -l pl
-Rumu雟ki s這wnik (lista s堯w) dla aspella.
+S這wnik (lista s堯w) rumu雟ki dla aspella.
 
 %prep
 %setup -q -n %{name}-%{version}-%{subv}

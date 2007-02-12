@@ -1,5 +1,5 @@
 Summary:	Romanian dictionary for aspell
-Summary(pl.UTF-8):   Rumuński słownik dla aspella
+Summary(pl.UTF-8):	Rumuński słownik dla aspella
 Name:		aspell-ro
 Version:	0.50
 %define	subv	2

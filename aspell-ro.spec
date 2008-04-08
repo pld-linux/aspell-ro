@@ -7,7 +7,7 @@ Release:	3
 Epoch:		1
 License:	free to use, no restrictions
 Group:		Applications/Text
-Source0:	ftp://ftp.gnu.org/gnu/aspell/dict/ro/%{name}-%{version}-%{subv}.tar.bz2
+Source0:	http://ftp.gnu.org/gnu/aspell/dict/ro/%{name}-%{version}-%{subv}.tar.bz2
 # Source0-md5:	96d97a79a0a0e04c580e0d0671d650c9
 URL:		http://aspell.sourceforge.net/
 BuildRequires:	aspell >= 2:0.50.0

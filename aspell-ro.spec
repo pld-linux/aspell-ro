@@ -1,14 +1,15 @@
 Summary:	Romanian dictionary for aspell
 Summary(pl.UTF-8):	Rumuński słownik dla aspella
 Name:		aspell-ro
-Version:	3.1
+Version:	3.3
+%define	subv	2
 Release:	1
 Epoch:		1
 License:	GPL v2
 Group:		Applications/Text
-Source0:	http://ftp.gnu.org/gnu/aspell/dict/ro/aspell5-ro-%{version}.tar.bz2
-# Source0-md5:	9be13b83c2eb441db38932933ae2a9c8
-URL:		http://aspell.sourceforge.net/
+Source0:	http://ftp.gnu.org/gnu/aspell/dict/ro/aspell5-ro-%{version}-%{subv}.tar.bz2
+# Source0-md5:	2d708c95fd7711efc61673c77f5f9d9e
+URL:		http://rospell.sourceforge.net/
 BuildRequires:	aspell >= 2:0.50.0
 Requires:	aspell >= 2:0.50.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -20,7 +21,7 @@ Romanian dictionary (i.e. word list) for aspell.
 Rumuński słownik (lista słów) dla aspella.
 
 %prep
-%setup -q -n aspell5-ro-%{version}
+%setup -q -n aspell5-ro-%{version}-%{subv}
 
 %build
 # note: configure is not autoconf-generated
@@ -40,5 +41,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{_libdir}/aspell/*
-%{_datadir}/aspell/*
+%{_libdir}/aspell/ro-*.*
+%{_libdir}/aspell/ro.*
+%{_libdir}/aspell/romanian.alias
+%{_libdir}/aspell/romanian-classic.alias
+%{_datadir}/aspell/ro.dat

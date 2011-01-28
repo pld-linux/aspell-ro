@@ -11,6 +11,7 @@ Source0:	http://ftp.gnu.org/gnu/aspell/dict/ro/aspell5-ro-%{version}-%{subv}.tar
 # Source0-md5:	2d708c95fd7711efc61673c77f5f9d9e
 URL:		http://rospell.sourceforge.net/
 BuildRequires:	aspell >= 2:0.50.0
+BuildRequires:	which
 Requires:	aspell >= 2:0.50.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

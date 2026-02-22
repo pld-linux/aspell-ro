@@ -13,6 +13,7 @@ URL:		http://rospell.sourceforge.net/
 BuildRequires:	aspell >= 2:0.50.0
 BuildRequires:	which
 Requires:	aspell >= 2:0.50.0
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -42,8 +43,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{_libdir}/aspell/ro-*.*
-%{_libdir}/aspell/ro.*
-%{_libdir}/aspell/romanian.alias
-%{_libdir}/aspell/romanian-classic.alias
+%{_prefix}/lib/aspell/ro-*.*
+%{_prefix}/lib/aspell/ro.*
+%{_prefix}/lib/aspell/romanian.alias
+%{_prefix}/lib/aspell/romanian-classic.alias
 %{_datadir}/aspell/ro.dat

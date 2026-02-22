@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Rumuński słownik dla aspella
 Name:		aspell-ro
 Version:	3.3
 %define	subv	2
-Release:	2
+Release:	3
 Epoch:		1
 License:	GPL v2
 Group:		Applications/Text
